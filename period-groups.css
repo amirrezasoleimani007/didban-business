@@ -1,0 +1,28 @@
+/* Two neutral period identities: blue for month/quarter, violet for year. */
+.v13-price-table{--period-month:#226a93;--period-year:#70508f;--period-month-line:#9ac7e1;--period-year-line:#c8b3df}
+.v13-price-table thead th.v14-period-month{color:#205b80;background:#e7f3fa;border-color:#bed8e8;border-top:3px solid #3b87b4}
+.v13-price-table thead th.v14-period-year{color:#63447f;background:#f0eaf7;border-color:#d3c3e3;border-top:3px solid #9472b3}
+.v14-period-heading{display:flex;align-items:center;justify-content:center;gap:8px;position:relative;z-index:1;min-height:25px;font-size:12px;font-weight:700}
+.v14-period-heading svg{width:22px;height:22px;flex:none;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.v13-price-table thead tr:nth-child(2) th.v14-period-month{background:#f0f8fc;color:#305f7d;border-top:0}
+.v13-price-table thead tr:nth-child(2) th.v14-period-year{background:#f7f2fb;color:#6b5083;border-top:0}
+.v13-price-table thead tr:first-child th.v14-period-month,.v13-price-table thead tr:first-child th.v14-period-year{position:relative;overflow:hidden}
+.v13-price-table thead tr:first-child th.v14-period-month:after,.v13-price-table thead tr:first-child th.v14-period-year:after{content:'';position:absolute;inset:0;width:45%;pointer-events:none;background:linear-gradient(105deg,transparent,#ffffff80,transparent);transform:translateX(-240%);animation:period-sheen 1.8s ease-out .2s 1 both}
+.v13-price-table thead tr:first-child th.v14-period-year:after{animation-delay:.55s}
+@keyframes period-sheen{from{transform:translateX(-240%)}to{transform:translateX(240%)}}
+.v13-price-table tbody tr .v13-month,.v13-price-table tbody tr .v13-month-change{background:#f0f8fc;border-bottom-color:#d7e8f2;transition:background-color .22s,box-shadow .22s}
+.v13-price-table tbody tr .v13-year,.v13-price-table tbody tr .v13-year-change{background:#f7f2fb;border-bottom-color:#e7dcf0;transition:background-color .22s,box-shadow .22s}
+.v13-price-table tbody tr .v13-month{border-right:2px solid var(--period-month-line)}
+.v13-price-table tbody tr .v13-year{border-right:2px solid var(--period-year-line)}
+.v13-price-table tbody tr .v13-month .v13-number,.v13-price-table tbody tr .v13-month .v13-date{color:#245f82}
+.v13-price-table tbody tr .v13-year .v13-number,.v13-price-table tbody tr .v13-year .v13-date{color:#674781}
+.v13-price-table .v13-month-change .change-pill.up,.v13-price-table .v13-month-change .change-pill.down,.v13-price-table .v13-month-change .change-pill.flat{background:#dceef9!important;color:#245f82!important}
+.v13-price-table .v13-year-change .change-pill.up,.v13-price-table .v13-year-change .change-pill.down,.v13-price-table .v13-year-change .change-pill.flat{background:#ebe0f6!important;color:#674781!important}
+.v13-price-table .v13-year-change .change-pill .direction{color:#674781!important}
+.v13-price-table .v13-month-change .v13-absolute{color:#3b6782}.v13-price-table .v13-year-change .v13-absolute{color:#715786}
+@media(hover:hover){.v13-price-table tbody tr:hover .v13-month,.v13-price-table tbody tr:hover .v13-month-change{background:#e5f3fb;box-shadow:inset 0 2px #80b7d7}.v13-price-table tbody tr:hover .v13-year,.v13-price-table tbody tr:hover .v13-year-change{background:#efe5f8;box-shadow:inset 0 2px #b99bd2}.v13-price-table thead tr:first-child th.v14-period-month:hover:after,.v13-price-table thead tr:first-child th.v14-period-year:hover:after{animation:period-sheen-hover 1.3s ease-out 1}}
+@keyframes period-sheen-hover{from{transform:translateX(-240%)}to{transform:translateX(240%)}}
+@media(max-width:760px){.v13-price-table tbody tr .v13-month,.v13-price-table tbody tr .v13-month-change{border-top:3px solid #78afd0;background:linear-gradient(145deg,#edf7fd,#f5faff)}.v13-price-table tbody tr .v13-year,.v13-price-table tbody tr .v13-year-change{border-top:3px solid #b397cd;background:linear-gradient(145deg,#f1eafa,#fbf8fd)}.v13-price-table tbody tr .v13-month,.v13-price-table tbody tr .v13-year{border-right:0}.v13-price-table .v13-month:before,.v13-price-table .v13-month-change:before{color:#245f82;font-weight:700}.v13-price-table .v13-year:before,.v13-price-table .v13-year-change:before{color:#674781;font-weight:700}}
+.calm .v13-price-table thead th:after{animation:none!important;display:none}
+@media(prefers-reduced-motion:reduce){.v13-price-table thead th:after{animation:none!important;display:none}.v13-price-table tbody td{transition:none!important}}
+@media print{.v13-price-table thead th:after{display:none!important}.v13-price-table .v14-period-month,.v13-price-table .v13-month,.v13-price-table .v13-month-change{border-color:#6a8fa7!important}.v13-price-table .v14-period-year,.v13-price-table .v13-year,.v13-price-table .v13-year-change{border-color:#9380a6!important}.v14-period-heading{font-size:11px}}
