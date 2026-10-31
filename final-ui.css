@@ -19,3 +19,6 @@ main>header{min-height:70px}.heading{margin:19px 0 16px;gap:18px}.heading h1{fon
 @media(max-width:760px){.v13-price-table .v13-date{font-size:11px}}
 
 .v13-price-table .change-pill{white-space:normal;max-width:100%;line-height:1.7}.v13-price-table .change-pill .num{white-space:normal}.v13-risk .change-pill{white-space:normal;line-height:1.7}
+
+.detailstats .stat{min-height:153px;padding:17px}.detailstats .stat strong{font-size:25px;line-height:1.6;margin:10px 0 5px;letter-spacing:0}.detailstats .stat strong .v13-compact-change{font-size:23px;white-space:nowrap;display:block;direction:rtl}.detailstats .stat strong .v13-card-unit{font-size:11px;display:block;font-weight:400;color:#52677c;margin-top:2px}.detailstats .stat:first-child .value-unit{font-size:11px}.detailstats .stat:first-child .v13-card-unit{color:#dbe7f1}.detailstats .stat>small{font-size:10px;line-height:1.7}
+@media(max-width:760px){.detailstats .stat{min-height:140px;padding:12px}.detailstats .stat strong .v13-compact-change{font-size:18px}.detailstats .stat strong{font-size:23px}.detailstats .stat strong .v13-card-unit{font-size:10px}}
