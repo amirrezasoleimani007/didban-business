@@ -2,7 +2,9 @@
 
 نسخه ۱.۴ — داشبورد فارسی رصد بازار فولاد و فضای کسب‌وکار داخلی و جهانی.
 
-اجرای آنلاین فعلی: https://didban-business-soleimani.amirreza-soleimani11.chatgpt.site
+اجرای آنلاین فعلی: https://amirrezasoleimani007.github.io/didban-business/?v=1.4.0
+
+ورود مستقیم به پیش‌بینی: https://amirrezasoleimani007.github.io/didban-business/?v=1.4.0&view=forecast
 
 ## اجرا
 
